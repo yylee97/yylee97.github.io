@@ -14,8 +14,8 @@
 
         function GetLongestString(str_arr){
             var max=str_arr[0].length;
-            str_arr.map(v=>max=Math.max(max,v.length));
-            result=str_arr.filter(v=>v.length==max);
+            str_arr.map(longest=>max=Math.max(max,longest.length));
+            result=str_arr.filter(longest=>longest.length==max);
             return result;
         }
         </script>
