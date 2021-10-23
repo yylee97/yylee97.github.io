@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        let longest = GetLongestString (["Metallica in KL","Megaceth in Ipoh","Manowar in Ampang"])
+        console.log("The longest string is "+longest)
+
+        function GetLongestString(str_arr){
+            var max=str_arr[0].length;
+            str_arr.map(v=>max=Math.max(max,v.length));
+            result=str_arr.filter(v=>v.length==max);
+            return result;
+        }
+        </script>
+</body>
+</html>
