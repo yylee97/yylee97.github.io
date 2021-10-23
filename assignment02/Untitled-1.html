@@ -13,10 +13,14 @@
         console.log("The longest string is "+longest)
 
         function GetLongestString(str_arr){
-            var max=str_arr[0].length;
-            str_arr.map(longest=>max=Math.max(max,longest.length));
-            result=str_arr.filter(longest=>longest.length==max);
-            return result;
+            var lgth=0;
+            var longest;
+
+            for(var i=0; i<longest.length;i++){
+                if (longest[i].length>lgth)
+                {var lgth= longest[i].length;
+                longest=longest[i]}
+            }
         }
         </script>
 </body>
