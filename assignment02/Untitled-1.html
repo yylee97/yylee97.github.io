@@ -13,13 +13,21 @@
         console.log("The longest string is "+longest)
 
         function GetLongestString(str_arr){
-            var lgth=0;
-            var longest;
+            var longest = [
+  'Metallica in KL',
+  'Megacath in Ipoh',
+  'Manowar in Ampang'
+];
 
-            for(var i=0; i<longest.length;i++){
-                if (longest[i].length>lgth)
-                {var lgth= longest[i].length;
-                longest=longest[i]}
+var lgth = 0;
+var LONGEST;
+
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i].length > lgth) {
+    var lgth = arr[i].length;
+    longest = arr[i];
+  }
+}
             }
         }
         </script>
