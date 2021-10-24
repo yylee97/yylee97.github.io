@@ -42,25 +42,64 @@
   float: left;
   width: 33.33%;
   padding: 5px;
+ 
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}      
+.btn:hover {
+	background-color:rgba(233, 210, 0, 0.945);
+    }
 
-.btn {
-    background-color: #4CAF50; /* Green */
+
+.column .btn {
+position: absolute;
+  top: 35%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    background-color: rgb(233, 153, 4);
   border: none;
-  color: white;
-  padding: 20px;
+  color:white;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+.column .bkn {
+position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    background-color: rgb(233, 153, 4);
+  border: none;
+  color:white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  
+  border-radius: 12px;
+}
+
+.column .bln {
+position: absolute;
+  top: 35%;
+  right: 8%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    background-color: rgb(233, 153, 4);
+  border: none;
+  color:white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  
   border-radius: 12px;
 }
 }
@@ -83,16 +122,16 @@
 
         <div class="row">
             <div class="column">
-                <a href="https://imgbox.com/PVLBsLtE" target="_blank"><img src="https://thumbs2.imgbox.com/85/44/PVLBsLtE_t.jpg" alt="image host" style="width:100%"/></a>
+               <img src="https://thumbs2.imgbox.com/85/44/PVLBsLtE_t.jpg" alt="image host" style="width:100%"/></a>
                 <button class="btn">Booking Now!</button>
             </div>
             <div class="column">
-                <a href="https://imgbox.com/irsOmce9" target="_blank"><img src="https://thumbs2.imgbox.com/d3/e9/irsOmce9_t.jpg" alt="image host" style="width:100%"/></a>
-                <button class="btn">Booking List</button>
+                <img src="https://thumbs2.imgbox.com/d3/e9/irsOmce9_t.jpg" alt="image host" style="width:100%"/></a>
+                <button class="bkn">Booking List</button>
             </div>
             <div class="column">
-                <a href="https://imgbox.com/xcGefFqG" target="_blank"><img src="https://thumbs2.imgbox.com/f1/21/xcGefFqG_t.jpg" alt="image host" style="width:100%"/></a>
-                <button class="btn">Gallery</button>
+               <img src="https://thumbs2.imgbox.com/f1/21/xcGefFqG_t.jpg" alt="image host" style="width:100%"/></a>
+                <button class="bln">Gallery</button>
             </div>
           </div>
         
