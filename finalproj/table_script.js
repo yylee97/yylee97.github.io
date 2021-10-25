@@ -37,3 +37,4 @@ function add_row()
  document.getElementById("new_country").value="";
  document.getElementById("new_age").value="";
 }
+
