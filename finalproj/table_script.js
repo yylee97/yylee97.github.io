@@ -13,7 +13,7 @@ function edit_row(no)
 	
  name.innerHTML="<input type='text' id='name_text"+no+"' value='"+name_data+"'>";
  country.innerHTML="<input type='text' id='country_text"+no+"' value='"+country_data+"'>";
- age.innerHTML="<input type='text' id='age_text"+no+"' value='"+age_data+"'>";
+ age.innerHTML="<input type='date' id='age_text"+no+"' value='"+age_data+"'>";
 }
 
 
