@@ -16,19 +16,7 @@ function edit_row(no)
  age.innerHTML="<input type='text' id='age_text"+no+"' value='"+age_data+"'>";
 }
 
-function save_row(no)
-{
- var name_val=document.getElementById("name_text"+no).value;
- var country_val=document.getElementById("country_text"+no).value;
- var age_val=document.getElementById("age_text"+no).value;
 
- document.getElementById("name_row"+no).innerHTML=name_val;
- document.getElementById("country_row"+no).innerHTML=country_val;
- document.getElementById("age_row"+no).innerHTML=age_val;
-
- document.getElementById("edit_button"+no).style.display="block";
- document.getElementById("save_button"+no).style.display="none";
-}
 
 function delete_row(no)
 {
