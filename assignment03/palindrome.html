@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count Vowel</title>
-</head>
-<body>
-   <script>
-    function findVowels(){  
+    <title>Enter a word!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load Bootstrap library for better UI look & feel -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <!-- Load the jQuery & jQuery UI libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      function findVowels(){[	  
 		//set an array of vowels here
 		var vowels = ['a', 'e', 'i', 'o', 'u'];
 		var vowelsFound = [];
@@ -22,7 +25,22 @@
 		}
 		document.getElementById("result").innerHTML = "<p><strong>Vowels found:</strong> "+ vowelsFound +"</p><p><strong>Vowels count:</strong> "+ vowelsFound.length +"</p>";
 	  }
-
-   </script>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <br />
+        
+        <form action="" id="myform">
+            <div class="form-group">
+              <label for="txt">Enter Text:</label>
+              <input type="text" class="form-control req" id="txt" >
+            </div>
+            <div class="form-group">
+			  <div id="result"></div>
+			</div>
+            <button type="button" class="btn btn-success" onclick="findVowels()">Submit</button>
+          </form>
+    </div>
 </body>
 </html>
