@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Count Vowel</title>
 </head>
 <body>
-    <h2>Check the Factorial!</h2>
-    Enter a number: <input id = "num">
-    <br><br>
-    <button onclick = "fact()"> Check It! </button>
-    <p id = "res"></p>
-    <script>
-    function fact(){
-    var i, num, f;
-    f = 1;
-    num = document.getElementById("num").value;
-    for(i = 1; i <= num; i++)  
-    {
-    f = f * i;
-    }
-    i = i - 1;  
-    document.getElementById("res").innerHTML = "The factorial of the number " + i + " is: " + f ;
-    }
-    </script>
+   <script>
+     // program to count the number of vowels in a string
+
+function countVowel(str) { 
+
+// find the count of vowels
+const count = str.match(/[aeiou]/gi).length;
+
+// return number of vowels
+return count;
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
+
+   </script>
 </body>
 </html>
