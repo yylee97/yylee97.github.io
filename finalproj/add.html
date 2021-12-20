@@ -1,6 +1,6 @@
 <html>
 <head>
-<script type="text/javascript" src="table_script.js"></script>
+<script type="text/javascript" src="add.js"></script>
     <title>Restaurant Booking System</title>
     <style>
         ul {
@@ -50,19 +50,47 @@
         <li><a href="https://yylee97.github.io/finalproj/gallery.html">Gallery</a></li>
       </ul>
 
-      <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
-    <tr>
-        <th>Name</th>
-        <th>Pax</th>
-        <th>Date</th>
-        </tr>
-    <tr>
-        <td><input type="text" id="new_name"></td>
-        <td><input type="text" id="new_country"></td>
-        <td><input type="date" id="new_age"></td>
-        <td><input type="button" class="add" onclick="add_row();" value="Submit"></td>
-        </tr>
-        </table>
+      <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="userName">Name</label>
+                <input type="text" class="form-control" id="userName">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="text" class="form-control" id="userEmail">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="userPax">Pax</label>
+                <select class="form-control" id="userPax">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="userRemarks">Remarks</label>
+                <textarea class="form-control" id="userRemarks" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary float-right" id="bookNowBtn">Book Now</button>
+        </div>
+    </div>
+</div>
 
      
         
