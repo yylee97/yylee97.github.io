@@ -1,3 +1,5 @@
+
+
 let bookNowBtn = document.getElementById("bookNowBtn")
 bookNowBtn.addEventListener('click', function () {
     let userName = document.getElementById("userName")
