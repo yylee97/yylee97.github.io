@@ -79,3 +79,35 @@ button:hover {
 #msg{
 	color:red;
 }
+
+ul {
+  top:20%;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(233, 153, 4);
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: rgba(233, 210, 0, 0.945);
+}
+
+.mid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
